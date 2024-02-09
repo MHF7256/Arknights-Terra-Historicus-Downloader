@@ -1,5 +1,5 @@
 import requests, json, os
-comicId = 1421
+comicId = 6252
 
 os.chdir(os.path.dirname(__file__))
 episodes = json.loads(requests.get(f"https://terra-historicus.hypergryph.com/api/comic/{comicId}").text)["data"]["episodes"][::-1]
